@@ -1,5 +1,6 @@
 let btn = document.getElementById("btn");
 btn.onclick = () => {
+  btn.style.backgroundColor = "";
   for (let index = 10; index >= 0; index--) {
     setTimeout(() => {
       btn.innerHTML = index;
