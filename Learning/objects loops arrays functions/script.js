@@ -35,7 +35,7 @@ for (let i = 0; i <= 100; i++) {
 
 // Guess number game
 
-let randomNum = Math.floor(Math.random() * 100);
+/** let randomNum = Math.floor(Math.random() * 100);
 let guessNum = prompt("Guess the Number betweem 0-100");
 while (guessNum != randomNum) {
   if (guessNum > randomNum) {
@@ -45,3 +45,21 @@ while (guessNum != randomNum) {
   }
 }
 alert("Congrats you Winnnnnn!!!! \n" + "my number was " + randomNum);
+**/
+
+// Strigs
+
+let fullName = prompt("Enter Your Full Name to Generate User Name");
+let userName = "@" + fullName + fullName.length;
+console.log(userName);
+
+// Arrays
+// Find Average Marks
+
+let marks = [85, 97, 44, 37, 76, 60];
+let tMarks = 0;
+for (let val of marks) {
+  tMarks += val;
+}
+let avgMks = tMarks / marks.length;
+console.log(avgMks);
