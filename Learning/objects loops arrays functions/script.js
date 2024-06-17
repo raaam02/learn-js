@@ -54,7 +54,7 @@ let userName = "@" + fullName + fullName.length;
 console.log(userName);
 
 // Arrays
-// Find Average Marks
+// Q1. Find Average Marks
 
 let marks = [85, 97, 44, 37, 76, 60];
 let tMarks = 0;
@@ -63,3 +63,12 @@ for (let val of marks) {
 }
 let avgMks = tMarks / marks.length;
 console.log(avgMks);
+
+// Q2. 10% discount on array items value
+
+let items = [250, 645, 300, 900, 50];
+
+for (let i = 0; i < items.length; i++) {
+  items[i] = items[i] - (items[i] * 30) / 100;
+}
+console.log(items);
