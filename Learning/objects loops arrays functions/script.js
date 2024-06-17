@@ -76,23 +76,23 @@ console.log(items);
 // Functions in javaScript
 // Q1. write a function to return vowel from a String
 let str = "hello how are you";
-let vowel = "";
+let vowel = 0;
 
 function getVowel(str) {
   for (const val of str) {
     if (val == "a" || val == "e" || val == "i" || val == "o" || val == "u") {
-      vowel += val;
+      vowel++;
     }
   }
   return vowel;
 }
 console.log(getVowel(str));
 
-let vo = "";
+let vo = 0;
 const getV = (str) => {
   for (const val of str) {
     if (val == "a" || val == "e" || val == "i" || val == "o" || val == "u") {
-      vo += val;
+      vo++;
     }
   }
   return vo;
