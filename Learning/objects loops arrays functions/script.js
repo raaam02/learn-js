@@ -98,3 +98,14 @@ const getV = (str) => {
   return vo;
 };
 console.log(getV(str));
+
+// forEach function
+// Q1. return sqaure of number given in an array
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+arr.forEach((num) => console.log(num * num));
+
+// Map - Map are just like forEach loop but it returns a new array
+let arr1 = [1, 2, 3, 4, 5, 6];
+let newarr = arr1.map((num) => num * 2);
+console.log(newarr);
