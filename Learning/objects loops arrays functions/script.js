@@ -117,3 +117,5 @@ based on given condition and store that value in new array **/
 let array1 = [2, 23, 43, 56, 22, 15, 125, 534];
 let filteredArray = array1.filter((val) => val % 2 === 0);
 console.log(filteredArray);
+
+// reduce Method in an Array
