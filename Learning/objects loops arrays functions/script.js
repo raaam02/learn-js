@@ -109,3 +109,11 @@ arr.forEach((num) => console.log(num * num));
 let arr1 = [1, 2, 3, 4, 5, 6];
 let newarr = arr1.map((num) => num * 2);
 console.log(newarr);
+
+// filter method of array in JavaScript
+/** it Filter out each value of array 
+based on given condition and store that value in new array **/
+
+let array1 = [2, 23, 43, 56, 22, 15, 125, 534];
+let filteredArray = array1.filter((val) => val % 2 === 0);
+console.log(filteredArray);
