@@ -72,3 +72,29 @@ for (let i = 0; i < items.length; i++) {
   items[i] = items[i] - (items[i] * 30) / 100;
 }
 console.log(items);
+
+// Functions in javaScript
+// Q1. write a function to return vowel from a String
+let str = "hello how are you";
+let vowel = "";
+
+function getVowel(str) {
+  for (const val of str) {
+    if (val == "a" || val == "e" || val == "i" || val == "o" || val == "u") {
+      vowel += val;
+    }
+  }
+  return vowel;
+}
+console.log(getVowel(str));
+
+let vo = "";
+const getV = (str) => {
+  for (const val of str) {
+    if (val == "a" || val == "e" || val == "i" || val == "o" || val == "u") {
+      vo += val;
+    }
+  }
+  return vo;
+};
+console.log(getV(str));
