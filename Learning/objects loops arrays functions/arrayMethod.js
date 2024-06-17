@@ -16,8 +16,31 @@ let filteredArray = array1.filter((val) => val % 2 === 0);
 console.log(filteredArray);
 
 // reduce Method in an Array
-// it reduce or give result of all array element based on given condition
+// it iterate over an array with 2 iterator and return a reduced value based on condition
 // Accumlator is that variable which store result of reduced array
 let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let reducedArray = arr2.reduce((sum, num) => sum + num);
 console.log(reducedArray);
+// return largest elemnt in array using reduce
+let arr3 = [24, 345, 46, 5, 6, 22, 43, 545, 76, 76];
+let largestEl = arr3.reduce((pre, cur) => (pre > cur ? pre : cur));
+console.log(largestEl);
+// Q1. filter out marks of student that scored 90+
+let marks = [34, 54, 89, 79, , 97, 87, 987, 45, 56, 6456, 546];
+let topMarks = marks.filter((num) => num > 90);
+console.log(topMarks);
+
+/****
+ * Take a number n from user and make arrays from 1-n
+ * and calculate sum using reduce method
+ * also calculate product using reduce method
+ ****/
+let n = 15;
+let newArray = [];
+for (let i = 0; i < n; i++) {
+  newArray[i] = i + 1;
+}
+let sum = newArray.reduce((pre, cur) => pre + cur);
+console.log(sum);
+let product = newArray.reduce((pre, cur) => pre * cur);
+console.log(product);
