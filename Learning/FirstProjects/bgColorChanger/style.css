@@ -1,0 +1,41 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container h1 {
+  color: #212121;
+}
+.container h3 {
+  color: #212121;
+  padding: auto auto;
+}
+
+.allbtn button {
+  height: 100px;
+  width: 100px;
+  margin: 2px;
+  border: 1px solid #212121;
+  border-radius: 5px;
+}
+
+.allbtn #red {
+  background-color: #fc2929;
+}
+.allbtn #green {
+  background-color: #008a00;
+}
+.allbtn #white {
+  background-color: #fff;
+}
+.allbtn #black {
+  background-color: #212121;
+}
