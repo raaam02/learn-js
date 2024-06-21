@@ -27,15 +27,15 @@ body {
   border-radius: 5px;
 }
 
-.allbtn #red {
+#red {
   background-color: #fc2929;
 }
-.allbtn #green {
+#green {
   background-color: #008a00;
 }
-.allbtn #white {
+#white {
   background-color: #fff;
 }
-.allbtn #black {
+#black {
   background-color: #212121;
 }
