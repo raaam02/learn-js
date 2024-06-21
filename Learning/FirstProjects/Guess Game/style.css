@@ -1,0 +1,103 @@
+* {
+  background-color: #0e0025;
+  color: white;
+}
+header {
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+.rbtn {
+  display: flex;
+  justify-content: end;
+}
+
+#restart {
+  margin: 5px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  background-color: red;
+  border: 1px solid red;
+  color: red;
+  outline: none;
+  border-radius: 50px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h2 {
+  margin: 2px;
+}
+.container h1 {
+  margin-bottom: 2px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-top: 5px;
+  height: 30px;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  color: black;
+  font-size: large;
+  padding: 2px 4px;
+  background-color: #d6d2ff;
+}
+.submit {
+  width: 100%;
+  height: 35px;
+  margin: 30px 0px 0px 5px;
+  background-color: #007b00;
+  border: 1px solid #00d000;
+  border-radius: 3px;
+  font-size: large;
+}
+
+.details {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.details span {
+  margin: 3px;
+}
+
+.won {
+  font-size: larger;
+  margin: 30px;
+  animation: wingame 1s infinite;
+}
+
+@keyframes wingame {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
