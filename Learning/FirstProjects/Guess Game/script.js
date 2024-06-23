@@ -1,3 +1,6 @@
+//It's Bad way to write Code bcz it just if-else
+// here for diffrent work diffrent functions should use
+
 const form = document.querySelector("form");
 const restart = document.getElementById("restart");
 const myNumber = Math.floor(Math.random() * 100 + 1);
@@ -34,11 +37,11 @@ form.addEventListener("submit", (e) => {
       previousGuesses[10 - remainingAttempt] = userGuessNum;
     }
     if (userGuessNum > myNumber) {
-      detail.innerHTML = `<span>Your Number Was Large</span>
+      detail.innerHTML = `<span><h3>Your Number is Large</h3></span>
             <span>Previous Guesses: ${previousGuesses}</span>
         <span>Remaining attemps: ${remainingAttempt}</span>`;
     } else {
-      detail.innerHTML = `<span>Your Number Was Small</span>
+      detail.innerHTML = `<span><h3>Your Number is Small</h3></span>
             <span>Previous Guesses: ${previousGuesses}</span>
         <span>Remaining attemps: ${remainingAttempt}</span>`;
     }
