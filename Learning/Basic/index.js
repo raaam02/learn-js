@@ -25,3 +25,15 @@ console.log(sub(5, 2));
 // Arrow Function
 const multiply = (n1, n2) => n1 * n2;
 console.log(multiply(3, 6));
+
+// Array and It's methods
+console.log("Array");
+const arr = [1, 2, 3, 4];
+arr.push(6);
+console.log(arr);
+const mapArr = arr.map((num) => num * 10);
+console.log(mapArr);
+const filterArr = mapArr.filter((num) => num > 30);
+console.log(filterArr);
+const reducedArr = arr.reduce((pre, cur) => pre + cur);
+console.log(reducedArr);
