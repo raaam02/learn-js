@@ -34,6 +34,41 @@ const arr = ["shyam", 1];
 const [name, id] = arr;
 console.log(name, id);
 
-const obj = { p1: { person1: 1 }, person2: "Ram" };
-const { p } = obj;
-console.log(p);
+const obj = { p1: { person1: 1 }, p2: "Ram" };
+const { p1, p2 } = obj;
+console.log(p1, p2);
+
+// Q7 Class
+class Emp {
+  name;
+  id;
+  salary;
+  displayInfo(id, name, salary) {
+    console.log(id, name, salary);
+  }
+}
+const e = new Emp();
+e.displayInfo(101, "Tom", 99000);
+
+// Q8 Promise .then .catch
+function promise(value) {
+  return new Promise((res, rej) => {
+    if (value) {
+      res(() => ({ id: "301", status: "resolved" }));
+    } else {
+      rej("Rejected");
+    }
+  });
+}
+
+const handlePromise = promise(true);
+handlePromise
+  .then((resolve) => {
+    return resolve();
+  })
+  .then((data) => {
+    console.log(data);
+  })
+  .catch((error) => {
+    console.log("Error: ", error);
+  });
