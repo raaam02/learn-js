@@ -67,8 +67,31 @@ handlePromise
     return resolve();
   })
   .then((data) => {
-    console.log(data);
+    console.log("using .then: ", data);
   })
   .catch((error) => {
     console.log("Error: ", error);
   });
+
+//   async await
+async function asyncPromise() {
+  try {
+    const getdata = await promise(true);
+    const data = getdata();
+    console.log("using async: ", data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+asyncPromise();
+
+// Q 10 Try Catch Finally
+try {
+  throw new Error("Error Thrown");
+} catch (error) {
+  console.log("Error Occured");
+} finally {
+  console.log("Always Executed");
+}
+
+//
