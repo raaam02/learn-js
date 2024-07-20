@@ -98,11 +98,35 @@
         alert("myButton is Clicked");
       });
 
-      const name = document.getElementById("name");
+      // Adding Email validation attribute
       const email = document.getElementById("email");
-      const pass = document.getElementById("pass");
+      email.setAttribute("type", "email");
 
-      //   const nameRegex =
+      // Client Side Validation using regex
+      const nameRegex = /^[a-zA-Z\s]+$/;
+      const passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]+$/;
+
+      document.querySelector("form").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("name").value;
+        const pass = document.getElementById("pass").value;
+
+        if (!nameRegex.test(name)) {
+          alert("Name Should contains alphabetical characters and spaces only");
+        }
+
+        if (!(pass.length < 8)) {
+          if (!passRegex.test(pass)) {
+            console.log(pass);
+            alert(
+              "Password should contains atleast 1 uppercase 1 lowercase and 1 digit"
+            );
+          }
+        } else {
+          alert("Password can be munimum 8 characters");
+        }
+      });
     </script>
   </body>
 </html>
